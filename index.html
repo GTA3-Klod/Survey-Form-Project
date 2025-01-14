@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for filling this form</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            type="text"
+            class="form-control"
+            placeholder="Enter your Name:"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email </label>
+          <input
+            id="email"
+            type="email"
+            class="form-control"
+            placeholder="Enter your Email:"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age </label>
+          <input
+            id="number"
+            type="number"
+            placeholder="Enter your Age:"
+            class="form-control"
+            min="1"
+            max="99"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Who are you?</p>
+          <select id="dropdown" class="form-control">
+            <option disable select value>Select your role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="developer">Developer</option>
+            <option value="PreferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Who do you recommend this form?</p>
+          <label
+            ><input
+              type="radio"
+              name="user-recommend"
+              value="colleagues"
+              checked
+            />
+            Colleagues</label
+          >
+          <label
+            ><input type="radio" name="user-recommend" value="friends" />
+            Friends</label
+          >
+          <label
+            ><input type="radio" name="user-recommend" value="other" />
+            Other</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What knowledge would you like to improve?</p>
+          <label><input type="checkbox" value="front-end" /> Front-End</label>
+          <label><input type="checkbox" value="back-end" /> Back-End</label>
+          <label><input type="checkbox" value="web-design" /> Web Design</label>
+          <label
+            ><input type="checkbox" value="project-management" /> Project
+            Management</label
+          >
+          <label><input type="checkbox" value="qa" /> QA</label>
+          <label><input type="checkbox" value="full stack" /> Full Stack</label>
+        </div>
+        <div class="form-group">
+          <p>Leave your comment or suggestion here:</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
